@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFHTTPClient.h>
 
-@interface TracktAPIClient : NSObject
+extern NSString * const kTraktAPIKey;
+extern NSString * const kTraktBaseURLString;
+
+
+@interface TraktAPIClient : AFHTTPClient
+// TEST COMMIT
++(TraktAPIClient *)sharedClient;
+
 
 @end
